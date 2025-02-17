@@ -27,21 +27,22 @@ public class UserSearch {
     @ParameterizedTest(name = "Для поискового запроса {0} должен отдавать поле уточнить")
     @Tag("BLOCKER")
     @DisplayName("Поиск товара на сайте")
-    void itemUserSearch(String searchQuery) {
+    void itemUserSearchTest(String searchQuery) {
         $("#search").setValue(searchQuery).pressEnter();
-        $$("li.digi-tip").shouldBe(sizeGreaterThan(0));
+        $$(".digi-product").shouldBe(sizeGreaterThan(0));
     }
 
     @CsvSource(value = {
-            "lipstick , 1",
-            "Face powder , 2"
+            "lipstick , категория Макияж , nude",
+            "Mascara , категория Макияж , stellary "
     })
-    @ParameterizedTest(name = "Для добавление {0} в корзине должна быть кнопка {1}")
+    @ParameterizedTest(name = "Для поиска товара {0} найдено в категории {1} уточнить по {2} выдается не пустой поиск")
     @Tag("BLOCKER")
-    void searchResultsShouldContainExpectedUrl(String searchQuery, String expectedLink) {
+    void SearchResultsForCategoryAreNotZeroTest(String searchQuery, String CategoryFoundItem, String digiTip) {
         $("#search").setValue(searchQuery).pressEnter();
-        $("li.digi-product__button").setValue(searchQuery).pressEnter();
-        $$("li.btn-icon__amount").shouldBe(sizeGreaterThan(0));
+        $("digi-category-found-item__image").setValue(CategoryFoundItem).click();
+        $("digi-tip__cloud").setValue(digiTip).click();
+        $$("digi-products").shouldBe(sizeGreaterThan(0));
 
     }
 }
