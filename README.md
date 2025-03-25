@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования для онлайн магазина "Подружка" [ссылка](https://www.podrygka.ru/)
 
 > **Подружка** — сеть магазинов косметики и бытовой химии.
-## Содержание:
+## :scroll: Содержание:
 
 - [Используемый стек](#computer-используемый-стек)
 - [Запуск автотестов](#arrow_forward-запуск-автотестов)
@@ -12,7 +12,7 @@
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
-## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
+## :computer: Используемый стек
 
 <p align="center">
 <a href="https://www.w3schools.com/java/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" title="Java" alt="Java" width="40" height="40"/> </a> 
