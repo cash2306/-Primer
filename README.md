@@ -1,7 +1,7 @@
 # Проект по автоматизации тестирования для онлайн магазина "Подружка" [ссылка](https://www.podrygka.ru/)
 
 > **Подружка** — сеть магазинов косметики и бытовой химии.
-## Содержание:
+## :scroll: Содержание:
 
 - [Используемый стек](#computer-используемый-стек)
 - [Запуск автотестов](#arrow_forward-запуск-автотестов)
@@ -12,7 +12,7 @@
 - [Уведомления в Telegram](#-уведомления-в-telegram)
 - [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
 
-## <a name="Технологии и инструменты">**Технологии и инструменты:**</a>
+## :computer: Используемый стек
 
 <p align="center">
 <a href="https://www.w3schools.com/java/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" title="Java" alt="Java" width="40" height="40"/> </a> 
@@ -52,7 +52,7 @@ gradle clean test -Dselenoid_url="selenoid.autotests.cloud/wd/hub" -Dbrowser_siz
 Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
 <p align="center">
 <img title="Jenkins Build" src="media/screens/jenkins.png">
-</p>
+  </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Пример Allure-отчета
