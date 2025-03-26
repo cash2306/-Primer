@@ -6,19 +6,20 @@ plugins {
 version '1.0-SNAPSHOT'
 allure {
     report {
-        version.set("2.27.0")
+        version.set("2.17.3") //версия Allure Report (https://github.com/allure-framework/allure2)
     }
     adapter {
-        aspectjWeaver.set(true)
+        aspectjWeaver.set(true) // обработка аннотации @Step
         frameworks {
             junit5 {
-                adapterVersion.set("2.27.0")
+                adapterVersion.set("2.17.3") //версия Allure JUnit5 (https://github.com/allure-framework/allure-java)
             }
         }
     }
 }
 repositories {
     mavenCentral()
+    jcenter()
 }
 compileJava {
     options.encoding = 'UTF-8'
@@ -33,6 +34,7 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-selenide:2.24.0'
     testImplementation 'org.slf4j:slf4j-simple:2.0.9'
     testImplementation 'org.testng:testng:7.1.0'
+
 }
 tasks.withType(Test) {
     systemProperties(System.getProperties())
@@ -43,11 +45,19 @@ tasks.withType(Test) {
 
 task podrygka_test(type: Test) {
     useJUnitPlatform {
-        includeTags("High")
+        includeTags("SMOKE")
         includeTags("Medium")
     }
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform() {
+        systemProperty "selenide.timeout", "30000" // Увеличиваем таймаут на поиск элементов (30 секунд)
+        systemProperty "selenide.pageLoadTimeout", "120000" // Увеличиваем таймаут загрузки страницы (120 секунд)
+        systemProperty "selenide.pollingInterval", "500" // Интервал опроса элементов
+    }
+}
+allure {
+    version = '2.14.0'  // Версия Allure
+    autoconfigure = true
 }

@@ -5,10 +5,10 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import ru.contur.helpers.Attach;
+import podrygka.Attach;
+
 import java.util.Map;
 
-import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
@@ -18,10 +18,10 @@ public class TestBase {
     public void testBase() {
 
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "126.0");
+        Configuration.browserVersion = System.getProperty("browserVersion", "127.0");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.pageLoadStrategy = "eager";
-        Configuration.baseUrl = "https://www.podrygka.ru/";
+        Configuration.baseUrl = "https://www.podrygka.ru/"; // Убедитесь, что baseUrl правильный
         Configuration.remote = "https://user1:1234@" + REMOTE_URL + "/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -31,22 +31,19 @@ public class TestBase {
         ));
         Configuration.browserCapabilities = capabilities;
         SelenideLogger.addListener("allure", new AllureSelenide());
-        open(baseUrl);
+        open(Configuration.baseUrl);
     }
 
     @BeforeEach
     void addListener() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
+
     @AfterEach
     void addAttachments() {
-        Attach.screenshotAs("Last screenshot");
-        Attach.pageSource();
-        if (!Configuration.browser.equalsIgnoreCase("firefox")) {
-            Attach.browserConsoleLogs();
-        }
-        Attach.addVideo();
 
-        Selenide.closeWebDriver();
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
     }
 }
