@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1ad29c5-062a-4db8-a0dc-215157bd52a1" name="Changes" comment="add SearchResultsForCategoryAreNotZeroTest">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/podrygka/Attach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/podrygka/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/podrygka/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/podrygka/StoreTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/podrygka/StoreTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="a1ad29c5-062a-4db8-a0dc-215157bd52a1" name="Changes" comment="add SearchResultsForCategoryAreNotZeroTest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -338,7 +329,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742898940739</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add SearchResultsForCategoryAreNotZeroTest">
+      <option name="closed" value="true" />
+      <created>1742987429670</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987429670</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add SearchResultsForCategoryAreNotZeroTest">
+      <option name="closed" value="true" />
+      <created>1742987453193</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987453193</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
