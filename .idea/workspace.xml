@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1ad29c5-062a-4db8-a0dc-215157bd52a1" name="Changes" comment="add SearchResultsForCategoryAreNotZeroTest" />
+    <list default="true" id="a1ad29c5-062a-4db8-a0dc-215157bd52a1" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +54,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -121,7 +123,7 @@
       <recent name="podrygka" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Primer [test]">
+  <component name="RunManager" selected="Gradle.Primer [podrygka_test]">
     <configuration name="NavigationTests.catalogLinkLocator" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -168,6 +170,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Primer [podrygka_test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="podrygka_test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Primer [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -188,30 +212,6 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Sorting.sorting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":podrygka_test" />
-            <option value="--tests" />
-            <option value="&quot;podrygka.Sorting.sorting&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="StoreTests.checkMainPageElements" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -264,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Primer [podrygka_test]" />
         <item itemvalue="Gradle.Primer [test]" />
         <item itemvalue="Gradle.NavigationTests.catalogLinkLocator" />
         <item itemvalue="Gradle.StoreTests.checkMainPageElements" />
         <item itemvalue="Gradle.UserSearch.itemUserSearchTest" />
-        <item itemvalue="Gradle.Sorting.sorting" />
       </list>
     </recent_temporary>
   </component>
@@ -345,7 +345,39 @@
       <option name="project" value="LOCAL" />
       <updated>1742987453193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add SearchResultsForCategoryAreNotZeroTest">
+      <option name="closed" value="true" />
+      <created>1742987631316</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987631316</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add SearchResultsForCategoryAreNotZeroTest">
+      <option name="closed" value="true" />
+      <created>1742987642882</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987642882</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:">
+      <option name="closed" value="true" />
+      <created>1742987806380</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987806380</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:">
+      <option name="closed" value="true" />
+      <created>1742987842678</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742987842678</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -363,7 +395,9 @@
     <MESSAGE value="add Search Results For Category Are Not Zero Test" />
     <MESSAGE value="add UserSearch" />
     <MESSAGE value="add SearchResultsForCategoryAreNotZeroTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="add SearchResultsForCategoryAreNotZeroTest" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;README.md" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
